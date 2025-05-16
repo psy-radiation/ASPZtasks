@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    FILE *fp = popen("rwho | more", "r");
+    FILE *fp = popen("ls -l | more", "r");
     if (!fp) {
         perror("popen failed");
         return 1;
